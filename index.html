@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pattaya Golf Trip 2026 | One-page Itinerary</title>
+  <meta name="description" content="Pattaya Golf Trip 2026 泰國芭達雅高爾夫球敘之旅一頁式行程表" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#0d6efd;
+      --blue-dark:#084298;
+      --green:#198754;
+      --green-dark:#146c43;
+      --bg:#f4f7fb;
+      --text:#263238;
+      --muted:#667085;
+      --card:#ffffff;
+      --line:#e8eef7;
+      --gold:#b5852b;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:"Noto Sans TC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.75;
+      font-size:16px;
+    }
+
+    a{color:inherit}
+    .hero{
+      min-height:56vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:#fff;
+      padding:88px 20px 96px;
+      background:
+        linear-gradient(135deg, rgba(4,24,53,.74), rgba(5,72,80,.45)),
+        url("https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1800&q=80");
+      background-size:cover;
+      background-position:center;
+    }
+    .hero-inner{
+      max-width:960px;
+      margin:auto;
+    }
+    .eyebrow{
+      display:inline-block;
+      padding:8px 16px;
+      border:1px solid rgba(255,255,255,.45);
+      border-radius:999px;
+      background:rgba(255,255,255,.13);
+      backdrop-filter:blur(8px);
+      margin-bottom:18px;
+      font-weight:500;
+      letter-spacing:.05em;
+    }
+    .hero h1{
+      font-size:clamp(36px, 6vw, 68px);
+      line-height:1.1;
+      margin-bottom:14px;
+      font-weight:900;
+    }
+    .hero h2{
+      font-size:clamp(19px, 2.4vw, 30px);
+      font-weight:500;
+      margin-bottom:12px;
+    }
+    .hero p{
+      font-size:18px;
+      color:rgba(255,255,255,.92);
+    }
+    .hero-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+      margin-top:26px;
+    }
+    .hero-tags span{
+      background:rgba(255,255,255,.16);
+      border:1px solid rgba(255,255,255,.28);
+      padding:7px 12px;
+      border-radius:999px;
+      backdrop-filter:blur(6px);
+      font-size:14px;
+    }
+
+    .container{
+      width:min(1180px, calc(100% - 28px));
+      margin:-46px auto 0;
+      position:relative;
+      z-index:1;
+      padding-bottom:50px;
+    }
+
+    .quick-grid{
+      display:grid;
+      grid-template-columns:repeat(4, 1fr);
+      gap:14px;
+      margin-bottom:20px;
+    }
+    .quick-card{
+      background:#fff;
+      border-radius:18px;
+      padding:18px;
+      box-shadow:0 10px 30px rgba(16,24,40,.10);
+      border:1px solid rgba(13,110,253,.08);
+      text-align:center;
+    }
+    .quick-card strong{display:block;font-size:18px;margin-bottom:5px}
+    .quick-card span{font-size:14px;color:var(--muted)}
+
+    .card{
+      background:var(--card);
+      border-radius:22px;
+      padding:26px;
+      margin-bottom:22px;
+      box-shadow:0 8px 26px rgba(16,24,40,.08);
+      border:1px solid rgba(16,24,40,.05);
+    }
+    .section-title{
+      font-size:26px;
+      color:#0a3d74;
+      margin-bottom:18px;
+      padding-bottom:12px;
+      border-bottom:3px solid var(--line);
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .sub-title{
+      color:#102a43;
+      font-size:21px;
+      margin:12px 0 8px;
+    }
+    .muted{color:var(--muted)}
+    .two-col{
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:18px;
+    }
+    .three-col{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:16px;
+    }
+    .info-box{
+      background:#f8fbff;
+      border:1px solid #e2ecfb;
+      border-radius:16px;
+      padding:16px;
+      margin-top:12px;
+    }
+    .place-box{
+      background:#fff;
+      border:1px solid #e5ebf3;
+      border-radius:16px;
+      padding:16px;
+      margin:14px 0;
+    }
+    .place-box h4{
+      font-size:18px;
+      margin-bottom:8px;
+      color:#17324d;
+    }
+    .address, .phone{
+      margin-top:8px;
+    }
+    .label{
+      font-weight:700;
+      color:#344054;
+      display:block;
+      margin-bottom:2px;
+    }
+
+    .btn-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:12px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:6px;
+      text-decoration:none;
+      color:#fff;
+      padding:9px 14px;
+      border-radius:999px;
+      font-weight:700;
+      font-size:14px;
+      transition:.2s ease;
+      min-height:40px;
+    }
+    .map-btn{background:var(--blue)}
+    .map-btn:hover{background:var(--blue-dark)}
+    .call-btn{background:var(--green)}
+    .call-btn:hover{background:var(--green-dark)}
+    .note-btn{background:#6c757d}
+
+    .timeline{
+      position:relative;
+      margin-top:8px;
+    }
+    .timeline::before{
+      content:"";
+      position:absolute;
+      left:10px;
+      top:8px;
+      bottom:8px;
+      width:2px;
+      background:#d9e7fb;
+    }
+    .item{
+      position:relative;
+      padding-left:36px;
+      margin:18px 0;
+    }
+    .item::before{
+      content:"";
+      position:absolute;
+      left:3px;
+      top:8px;
+      width:16px;
+      height:16px;
+      background:var(--blue);
+      border-radius:50%;
+      border:3px solid #fff;
+      box-shadow:0 0 0 2px #cfe0ff;
+    }
+    .time{
+      font-weight:900;
+      color:var(--blue);
+      font-size:18px;
+      margin-bottom:2px;
+    }
+    .day{
+      border-left:7px solid var(--blue);
+    }
+    .day-title{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:8px;
+      margin-bottom:16px;
+    }
+    .day-title h2{
+      color:#0a3d74;
+      font-size:25px;
+    }
+    .day-title span{
+      color:var(--gold);
+      font-weight:800;
+    }
+
+    ul{padding-left:22px}
+    .pill{
+      display:inline-block;
+      padding:5px 10px;
+      border-radius:999px;
+      background:#edf5ff;
+      color:#0a58ca;
+      font-size:13px;
+      font-weight:800;
+      margin:4px 4px 4px 0;
+    }
+
+    .float-menu{
+      position:fixed;
+      right:16px;
+      bottom:16px;
+      display:flex;
+      flex-direction:column;
+      gap:9px;
+      z-index:999;
+    }
+    .float-menu a{
+      text-decoration:none;
+      color:#fff;
+      background:#0d6efd;
+      padding:10px 14px;
+      border-radius:999px;
+      box-shadow:0 8px 18px rgba(16,24,40,.24);
+      font-weight:800;
+      font-size:13px;
+      white-space:nowrap;
+    }
+    .float-menu a:first-child{background:#198754}
+
+    .footer{
+      text-align:center;
+      padding:38px 20px;
+      color:#667085;
+      font-size:14px;
+    }
+    .footer strong{
+      color:#344054;
+      display:block;
+      margin-bottom:6px;
+    }
+
+    @media print{
+      .float-menu{display:none}
+      .hero{min-height:auto;padding:50px 20px}
+      .container{margin:20px auto}
+      .card{box-shadow:none;break-inside:avoid}
+      .btn{border:1px solid #ccc;color:#000;background:#fff!important}
+    }
+
+    @media(max-width:900px){
+      .quick-grid,.three-col,.two-col{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:640px){
+      body{font-size:15px}
+      .container{width:min(100% - 18px, 1180px);margin:-32px auto 0}
+      .quick-grid,.three-col,.two-col{grid-template-columns:1fr}
+      .card{border-radius:18px;padding:20px}
+      .section-title{font-size:22px}
+      .day-title h2{font-size:22px}
+      .float-menu{
+        left:8px;
+        right:8px;
+        bottom:8px;
+        flex-direction:row;
+        overflow-x:auto;
+        padding:2px;
+      }
+      .float-menu a{
+        flex:0 0 auto;
+        font-size:12px;
+        padding:9px 12px;
+      }
+      .footer{padding-bottom:70px}
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="float-menu" aria-label="快捷功能">
+    <a href="tel:+6638197888">📞 撥打飯店</a>
+    <a href="https://maps.google.com/?q=Somerset+Pattaya" target="_blank" rel="noopener">📍 飯店導航</a>
+    <a href="https://maps.google.com/?q=Laem+Chabang+International+Country+Club" target="_blank" rel="noopener">⛳ 球場導航</a>
+    <a href="https://maps.google.com/?q=Suvarnabhumi+Airport" target="_blank" rel="noopener">✈️ 機場導航</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">One-page Itinerary</div>
+      <h1>🏌️ Pattaya Golf Trip 2026</h1>
+      <h2>泰國芭達雅高爾夫球敘之旅</h2>
+      <p>2026.07.02（四）－2026.07.05（日）</p>
+      <div class="hero-tags">
+        <span>8位球友</span>
+        <span>3天全日包車＋1天送機</span>
+        <span>2場高爾夫</span>
+        <span>Somerset Pattaya</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="quick-grid" aria-label="行程摘要">
+      <div class="quick-card"><strong>07/02</strong><span>抵達曼谷・高爾夫</span></div>
+      <div class="quick-card"><strong>07/03</strong><span>芭達雅自由活動</span></div>
+      <div class="quick-card"><strong>07/04</strong><span>高爾夫球日</span></div>
+      <div class="quick-card"><strong>07/05</strong><span>返回台灣</span></div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">✈️ 航班資訊</h2>
+      <div class="two-col">
+        <div class="info-box">
+          <h3 class="sub-title">去程｜中華航空 CI833</h3>
+          <p><strong>日期：</strong>2026/07/02（四）</p>
+          <p><strong>起飛：</strong>07:00 桃園國際機場 TPE</p>
+          <p><strong>抵達：</strong>09:45 曼谷素萬那普機場 BKK</p>
+        </div>
+        <div class="info-box">
+          <h3 class="sub-title">回程｜中華航空 CI832</h3>
+          <p><strong>日期：</strong>2026/07/05（日）</p>
+          <p><strong>起飛：</strong>13:20 曼谷素萬那普機場 BKK</p>
+          <p><strong>抵達：</strong>18:00 桃園國際機場 TPE</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">🏨 住宿資訊</h2>
+      <div class="place-box">
+        <h3 class="sub-title">Somerset Pattaya 芭達雅盛捷服務公寓</h3>
+        <p class="address"><span class="label">📍 地址</span>528 Pattaya Sai 2 Road, Nongprue, Banglamung, Chonburi 20150, Thailand</p>
+        <p class="phone"><span class="label">☎ 電話</span>+66 38 197 888</p>
+        <div class="btn-row">
+          <a class="btn call-btn" href="tel:+6638197888">☎ 一鍵撥號</a>
+          <a class="btn map-btn" href="https://maps.google.com/?q=Somerset+Pattaya" target="_blank" rel="noopener">📍 Google導航</a>
+        </div>
+        <div class="info-box">
+          <p><strong>房型配置：</strong>海景房 × 4 間｜標準房 × 3 間</p>
+          <p><strong>早餐：</strong>含每日早餐</p>
+          <p><strong>備註：</strong>入住時間依飯店現場規定為準。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">🚐 交通安排</h2>
+      <div class="info-box">
+        <h3 class="sub-title">專屬包車服務</h3>
+        <p><strong>預計用車：</strong>三天全日包車＋一天送機</p>
+        <p><strong>車型：</strong>16人座三排座位 VIP 巴士</p>
+        <p><strong>費用：</strong>全日包車 THB 13,000／日｜機場接送 THB 8,500／趟</p>
+        <p><strong>包含：</strong>司機、高速公路費、停車費及基本交通相關費用。</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">⛳ 高爾夫資訊</h2>
+      <div class="place-box">
+        <h3 class="sub-title">Laem Chabang International Country Club</h3>
+        <p class="address"><span class="label">📍 地址</span>106/8 Moo 4, Beung, Sriracha, Chonburi 20230, Thailand</p>
+        <p class="phone"><span class="label">☎ 電話</span>+66 38 372 273</p>
+        <div class="btn-row">
+          <a class="btn call-btn" href="tel:+6638372273">☎ 一鍵撥號</a>
+          <a class="btn map-btn" href="https://maps.google.com/?q=Laem+Chabang+International+Country+Club" target="_blank" rel="noopener">📍 Google導航</a>
+        </div>
+        <div class="info-box">
+          <span class="pill">8位球友</span>
+          <span class="pill">1人1球僮</span>
+          <span class="pill">1人1球車</span>
+          <p><strong>7/2（四）：</strong>第一組 12:54（4位）｜第二組 13:02（4位）｜Lake Course 9洞 + Valley Course 9洞｜THB 4,805／人</p>
+          <p><strong>7/4（六）：</strong>第一組 13:18（4位）｜第二組 13:26（4位）｜THB 5,250／人</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card day">
+      <div class="day-title">
+        <h2>📅 Day 1｜07/02（四）</h2>
+        <span>抵達曼谷 × 高爾夫球日</span>
+      </div>
+      <div class="timeline">
+        <div class="item">
+          <div class="time">05:00</div>
+          <p>桃園國際機場集合。</p>
+        </div>
+        <div class="item">
+          <div class="time">07:00</div>
+          <p>搭乘中華航空 CI833 前往曼谷。</p>
+        </div>
+        <div class="item">
+          <div class="time">09:45</div>
+          <p>抵達曼谷素萬那普國際機場（BKK）。</p>
+          <div class="place-box">
+            <h4>✈️ Suvarnabhumi Airport</h4>
+            <p class="address"><span class="label">📍 地址</span>999 Moo 1, Nong Prue, Bang Phli District, Samut Prakan 10540, Thailand</p>
+            <p class="phone"><span class="label">☎ 電話</span>+66 2 132 1888</p>
+            <div class="btn-row">
+              <a class="btn call-btn" href="tel:+6621321888">☎ 一鍵撥號</a>
+              <a class="btn map-btn" href="https://maps.google.com/?q=Suvarnabhumi+Airport" target="_blank" rel="noopener">📍 Google導航</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">10:30</div>
+          <p>專車接送前往 Laem Chabang Golf Club。</p>
+        </div>
+        <div class="item">
+          <div class="time">12:00</div>
+          <p>抵達 Laem Chabang Golf Club，午餐及報到。</p>
+          <div class="place-box">
+            <h4>⛳ Laem Chabang International Country Club</h4>
+            <p class="address"><span class="label">📍 地址</span>106/8 Moo 4, Beung, Sriracha, Chonburi 20230, Thailand</p>
+            <p class="phone"><span class="label">☎ 電話</span>+66 38 372 273</p>
+            <div class="btn-row">
+              <a class="btn call-btn" href="tel:+6638372273">☎ 一鍵撥號</a>
+              <a class="btn map-btn" href="https://maps.google.com/?q=Laem+Chabang+International+Country+Club" target="_blank" rel="noopener">📍 Google導航</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">12:54</div>
+          <p>第一組開球（4位）。</p>
+        </div>
+        <div class="item">
+          <div class="time">13:02</div>
+          <p>第二組開球（4位）。球道：Lake Course 9洞 + Valley Course 9洞。</p>
+        </div>
+        <div class="item">
+          <div class="time">18:00</div>
+          <p>球場盥洗後返回飯店。</p>
+        </div>
+        <div class="item">
+          <div class="time">19:00</div>
+          <p>入住 Somerset Pattaya，晚間自由活動。</p>
+          <div class="place-box">
+            <h4>🏨 Somerset Pattaya</h4>
+            <p class="address"><span class="label">📍 地址</span>528 Pattaya Sai 2 Road, Nongprue, Banglamung, Chonburi 20150, Thailand</p>
+            <p class="phone"><span class="label">☎ 電話</span>+66 38 197 888</p>
+            <div class="btn-row">
+              <a class="btn call-btn" href="tel:+6638197888">☎ 一鍵撥號</a>
+              <a class="btn map-btn" href="https://maps.google.com/?q=Somerset+Pattaya" target="_blank" rel="noopener">📍 Google導航</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card day">
+      <div class="day-title">
+        <h2>📅 Day 2｜07/03（五）</h2>
+        <span>芭達雅自由活動日</span>
+      </div>
+      <p class="muted">以下為建議景點，可依現場狀況與團員需求彈性安排。</p>
+
+      <div class="three-col">
+        <div class="place-box">
+          <h4>🛍 Terminal 21 Pattaya</h4>
+          <p class="address"><span class="label">📍 地址</span>456, 777, 777/1 Moo 6, North Pattaya Road, Pattaya City, Chonburi 20150, Thailand</p>
+          <p class="phone"><span class="label">☎ 電話</span>+66 33 079 777</p>
+          <div class="btn-row">
+            <a class="btn call-btn" href="tel:+6633079777">☎ 一鍵撥號</a>
+            <a class="btn map-btn" href="https://maps.google.com/?q=Terminal+21+Pattaya" target="_blank" rel="noopener">📍 Google導航</a>
+          </div>
+        </div>
+
+        <div class="place-box">
+          <h4>🛍 Central Festival Pattaya</h4>
+          <p class="address"><span class="label">📍 地址</span>333/99 Moo 9, Pattaya Beach Road, Nong Prue, Bang Lamung, Chonburi 20260, Thailand</p>
+          <p class="phone"><span class="label">☎ 電話</span>+66 38 043 999</p>
+          <div class="btn-row">
+            <a class="btn call-btn" href="tel:+6638043999">☎ 一鍵撥號</a>
+            <a class="btn map-btn" href="https://maps.google.com/?q=Central+Festival+Pattaya" target="_blank" rel="noopener">📍 Google導航</a>
+          </div>
+        </div>
+
+        <div class="place-box">
+          <h4>🏖 Pattaya Beach</h4>
+          <p class="address"><span class="label">📍 地址</span>Pattaya Beach, Pattaya City, Chonburi, Thailand</p>
+          <p class="phone"><span class="label">☎ 電話</span>未提供官方電話</p>
+          <div class="btn-row">
+            <a class="btn map-btn" href="https://maps.google.com/?q=Pattaya+Beach" target="_blank" rel="noopener">📍 Google導航</a>
+          </div>
+        </div>
+
+        <div class="place-box">
+          <h4>🌃 Walking Street Pattaya</h4>
+          <p class="address"><span class="label">📍 地址</span>Walking Street, Pattaya City, Bang Lamung District, Chonburi 20150, Thailand</p>
+          <p class="phone"><span class="label">☎ 電話</span>未提供官方電話</p>
+          <div class="btn-row">
+            <a class="btn map-btn" href="https://maps.google.com/?q=Walking+Street+Pattaya" target="_blank" rel="noopener">📍 Google導航</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <strong>交通：</strong>全日包車待命，可依實際狀況調整景點順序。
+      </div>
+    </section>
+
+    <section class="card day">
+      <div class="day-title">
+        <h2>📅 Day 3｜07/04（六）</h2>
+        <span>高爾夫球日</span>
+      </div>
+      <div class="timeline">
+        <div class="item">
+          <div class="time">上午</div>
+          <p>自由活動，可使用飯店設施、泳池、健身房，或安排海灘散步。</p>
+        </div>
+        <div class="item">
+          <div class="time">12:00</div>
+          <p>飯店出發前往 Laem Chabang International Country Club。</p>
+          <div class="place-box">
+            <h4>⛳ Laem Chabang International Country Club</h4>
+            <p class="address"><span class="label">📍 地址</span>106/8 Moo 4, Beung, Sriracha, Chonburi 20230, Thailand</p>
+            <p class="phone"><span class="label">☎ 電話</span>+66 38 372 273</p>
+            <div class="btn-row">
+              <a class="btn call-btn" href="tel:+6638372273">☎ 一鍵撥號</a>
+              <a class="btn map-btn" href="https://maps.google.com/?q=Laem+Chabang+International+Country+Club" target="_blank" rel="noopener">📍 Google導航</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">13:18</div>
+          <p>第一組開球（4位）。</p>
+        </div>
+        <div class="item">
+          <div class="time">13:26</div>
+          <p>第二組開球（4位）。</p>
+        </div>
+        <div class="item">
+          <div class="time">20:30</div>
+          <p>球場盥洗後返回飯店，晚間自由活動。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card day">
+      <div class="day-title">
+        <h2>📅 Day 4｜07/05（日）</h2>
+        <span>返回台灣</span>
+      </div>
+      <div class="timeline">
+        <div class="item">
+          <div class="time">09:30</div>
+          <p>Somerset Pattaya 出發前往曼谷素萬那普機場。</p>
+          <div class="place-box">
+            <h4>🏨 Somerset Pattaya</h4>
+            <p class="address"><span class="label">📍 地址</span>528 Pattaya Sai 2 Road, Nongprue, Banglamung, Chonburi 20150, Thailand</p>
+            <p class="phone"><span class="label">☎ 電話</span>+66 38 197 888</p>
+            <div class="btn-row">
+              <a class="btn call-btn" href="tel:+6638197888">☎ 一鍵撥號</a>
+              <a class="btn map-btn" href="https://maps.google.com/?q=Somerset+Pattaya" target="_blank" rel="noopener">📍 Google導航</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">11:00</div>
+          <p>抵達曼谷素萬那普國際機場（BKK）。</p>
+          <div class="place-box">
+            <h4>✈️ Suvarnabhumi Airport</h4>
+            <p class="address"><span class="label">📍 地址</span>999 Moo 1, Nong Prue, Bang Phli District, Samut Prakan 10540, Thailand</p>
+            <p class="phone"><span class="label">☎ 電話</span>+66 2 132 1888</p>
+            <div class="btn-row">
+              <a class="btn call-btn" href="tel:+6621321888">☎ 一鍵撥號</a>
+              <a class="btn map-btn" href="https://maps.google.com/?q=Suvarnabhumi+Airport" target="_blank" rel="noopener">📍 Google導航</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">13:20</div>
+          <p>搭乘中華航空 CI832 返回台灣。</p>
+        </div>
+        <div class="item">
+          <div class="time">18:00</div>
+          <p>抵達桃園國際機場，行程圓滿結束。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">☎ 重要聯絡資訊</h2>
+      <div class="three-col">
+        <div class="place-box">
+          <h4>🏨 Somerset Pattaya</h4>
+          <p><span class="label">電話</span>+66 38 197 888</p>
+          <div class="btn-row"><a class="btn call-btn" href="tel:+6638197888">☎ 一鍵撥號</a></div>
+        </div>
+        <div class="place-box">
+          <h4>⛳ Laem Chabang Golf Club</h4>
+          <p><span class="label">電話</span>+66 38 372 273</p>
+          <div class="btn-row"><a class="btn call-btn" href="tel:+6638372273">☎ 一鍵撥號</a></div>
+        </div>
+        <div class="place-box">
+          <h4>👮 泰國觀光警察</h4>
+          <p><span class="label">電話</span>1155</p>
+          <div class="btn-row"><a class="btn call-btn" href="tel:1155">☎ 一鍵撥號</a></div>
+        </div>
+        <div class="place-box">
+          <h4>🚑 泰國急救電話</h4>
+          <p><span class="label">電話</span>1669</p>
+          <div class="btn-row"><a class="btn call-btn" href="tel:1669">☎ 一鍵撥號</a></div>
+        </div>
+        <div class="place-box">
+          <h4>🇹🇼 駐泰國台北經濟文化辦事處</h4>
+          <p><span class="label">電話</span>+66 2 119 3555</p>
+          <div class="btn-row"><a class="btn call-btn" href="tel:+6621193555">☎ 一鍵撥號</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>Pattaya Golf Trip 2026｜One-page Itinerary</strong>
+    Good Golf．Good Friends．Great Memories 🏌️⛳🌴
+  </footer>
+</body>
+</html>
